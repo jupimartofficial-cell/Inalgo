@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-03-30T04:42:24.859Z",
+  "tenantId": "local-desktop",
+  "username": "admin",
+  "checks": [
+    {
+      "step": "login",
+      "ok": true
+    },
+    {
+      "step": "start_live",
+      "ok": false,
+      "detail": {
+        "ok": false,
+        "status": 400,
+        "data": {
+          "error": "Live strategy is already running. Resume or exit the active runtime first."
+        }
+      }
+    }
+  ],
+  "decision": "NO_GO",
+  "reason": "live run api failed"
+}

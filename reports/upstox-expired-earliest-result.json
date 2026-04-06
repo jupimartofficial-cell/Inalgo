@@ -1,0 +1,87 @@
+{
+  "timestampUtc": "2026-03-07T09:44:53.805914+00:00",
+  "endpoint": "/v2/expired-instruments/historical-candle",
+  "minProbeDate": "2020-01-01",
+  "rows": [
+    {
+      "instrument": "NSE_FO|73507|24-04-2025",
+      "timeframe": "1minute",
+      "earliestCandleAt": "2025-01-31T13:41:00+05:30",
+      "totalCandlesFetched": 18886,
+      "finalStatus": 200,
+      "errorCode": null,
+      "errorMessage": null,
+      "windowDays": 29
+    },
+    {
+      "instrument": "NSE_FO|73507|24-04-2025",
+      "timeframe": "5minute",
+      "earliestCandleAt": "2025-01-31T03:30:00+05:30",
+      "totalCandlesFetched": 7067,
+      "finalStatus": 200,
+      "errorCode": null,
+      "errorMessage": null,
+      "windowDays": 29
+    },
+    {
+      "instrument": "NSE_FO|73507|24-04-2025",
+      "timeframe": "15minute",
+      "earliestCandleAt": "2025-01-31T03:30:00+05:30",
+      "totalCandlesFetched": 2545,
+      "finalStatus": 200,
+      "errorCode": null,
+      "errorMessage": null,
+      "windowDays": 29
+    },
+    {
+      "instrument": "NSE_FO|73507|24-04-2025",
+      "timeframe": "30minute",
+      "earliestCandleAt": "2025-01-31T03:30:00+05:30",
+      "totalCandlesFetched": 1352,
+      "finalStatus": 200,
+      "errorCode": null,
+      "errorMessage": null,
+      "windowDays": 29
+    },
+    {
+      "instrument": "NSE_FO|73507|24-04-2025",
+      "timeframe": "60minute",
+      "earliestCandleAt": null,
+      "totalCandlesFetched": 0,
+      "finalStatus": 400,
+      "errorCode": "UDAPI1147",
+      "errorMessage": "Invalid interval",
+      "windowDays": 90
+    },
+    {
+      "instrument": "NSE_FO|73507|24-04-2025",
+      "timeframe": "1day",
+      "earliestCandleAt": null,
+      "totalCandlesFetched": 0,
+      "finalStatus": 400,
+      "errorCode": "UDAPI1147",
+      "errorMessage": "Invalid interval",
+      "windowDays": 365
+    },
+    {
+      "instrument": "NSE_FO|73507|24-04-2025",
+      "timeframe": "1week",
+      "earliestCandleAt": null,
+      "totalCandlesFetched": 0,
+      "finalStatus": 400,
+      "errorCode": "UDAPI1147",
+      "errorMessage": "Invalid interval",
+      "windowDays": 1825
+    },
+    {
+      "instrument": "NSE_FO|73507|24-04-2025",
+      "timeframe": "1month",
+      "earliestCandleAt": null,
+      "totalCandlesFetched": 0,
+      "finalStatus": 400,
+      "errorCode": "UDAPI1147",
+      "errorMessage": "Invalid interval",
+      "windowDays": 3650
+    }
+  ]
+}

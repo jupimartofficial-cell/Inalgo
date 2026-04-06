@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "frontend",
+      "cwd": "/Users/dhana/Documents/trade/Trade/desktop",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev:renderer", "--", "--port", "5174"],
+      "port": 5174
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-trade}
+      - POSTGRES_USER=${POSTGRES_USER:-trade}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env or the shell}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER:-trade} -d $${POSTGRES_DB:-trade}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8081:8081"
+    environment:
+      - DB_URL=${DB_URL:-jdbc:postgresql://postgres:5432/trade}
+      - DB_USERNAME=${DB_USERNAME:-trade}
+      - DB_PASSWORD=${DB_PASSWORD:?Set DB_PASSWORD in .env or the shell}
+      - ADMIN_SESSION_MINUTES=${ADMIN_SESSION_MINUTES:-360}
+      - CORS_ALLOWED_ORIGINS=${CORS_ALLOWED_ORIGINS:-http://localhost:5173,http://127.0.0.1:5173}
+      - UPSTOX_BASE_URL=${UPSTOX_BASE_URL:-https://api.upstox.com}
+      - UPSTOX_ORDER_BASE_URL=${UPSTOX_ORDER_BASE_URL:-https://api-hft.upstox.com}
+      - MARKET_HOURS_ZONE_ID=${MARKET_HOURS_ZONE_ID:-Asia/Kolkata}
+      - MARKET_HOURS_OPEN_TIME=${MARKET_HOURS_OPEN_TIME:-09:15}
+      - MARKET_HOURS_CLOSE_TIME=${MARKET_HOURS_CLOSE_TIME:-16:00}
+      - OPENAI_MARKET_ENABLED=${OPENAI_MARKET_ENABLED:-false}
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  desktop-ui:
+    build:
+      context: ./desktop
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+volumes:
+  pg_data:

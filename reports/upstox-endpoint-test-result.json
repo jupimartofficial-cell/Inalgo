@@ -1,0 +1,343 @@
+{
+  "timestamp": "2026-03-04T14:18:12.260477+00:00",
+  "total": 42,
+  "ok": 42,
+  "checks": [
+    {
+      "endpoint": "intraday",
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "1minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-04T15:29:00+05:30\",24476.7,24481.55,24463.95,24473.95,0,0],[\"2026-03-04"
+    },
+    {
+      "endpoint": "intraday",
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "5minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-04T15:25:00+05:30\",24468.4,24482.15,24457.9,24473.95,0,0],[\"2026-03-04T"
+    },
+    {
+      "endpoint": "intraday",
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "15minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-04T15:15:00+05:30\",24464.85,24482.15,24451.05,24473.95,0,0],[\"2026-03-0"
+    },
+    {
+      "endpoint": "intraday",
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "30minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-04T15:15:00+05:30\",24464.85,24482.15,24451.05,24473.95,0,0],[\"2026-03-0"
+    },
+    {
+      "endpoint": "intraday",
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "60minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-04T15:15:00+05:30\",24464.85,24482.15,24451.05,24473.95,0,0],[\"2026-03-0"
+    },
+    {
+      "endpoint": "intraday",
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "1day",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-04T00:00:00+05:30\",24388.8,24602.45,24305.4,24480.5,0,0]]}}"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "1minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T15:29:00+05:30\",24852.6,24855.6,24845.2,24849.75,0,0],[\"2026-03-02T1"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "5minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T15:25:00+05:30\",24865.55,24886.1,24845.2,24849.75,0,0],[\"2026-03-02T"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "15minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T15:15:00+05:30\",24905.25,24914.85,24845.2,24849.75,0,0],[\"2026-03-02"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "30minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T15:15:00+05:30\",24905.25,24914.85,24845.2,24849.75,0,0],[\"2026-03-02"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "60minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T15:15:00+05:30\",24905.25,24914.85,24845.2,24849.75,0,0],[\"2026-03-02"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "1day",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T00:00:00+05:30\",24659.25,24989.35,24603.5,24865.7,0,0],[\"2026-02-27T"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "1week",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T00:00:00+05:30\",24659.25,24989.35,24603.5,24865.7,0,0],[\"2026-02-23T"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "1month",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-01T00:00:00+05:30\",24659.25,24989.35,24603.5,24865.7,0,0],[\"2026-02-01T"
+    },
+    {
+      "endpoint": "intraday",
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "1minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-04T15:29:00+05:30\",58764.8,58777.0,58714.65,58759.65,0,0],[\"2026-03-04T"
+    },
+    {
+      "endpoint": "intraday",
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "5minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-04T15:25:00+05:30\",58757.95,58777.0,58714.65,58759.65,0,0],[\"2026-03-04"
+    },
+    {
+      "endpoint": "intraday",
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "15minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-04T15:15:00+05:30\",58723.45,58777.0,58657.6,58759.65,0,0],[\"2026-03-04T"
+    },
+    {
+      "endpoint": "intraday",
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "30minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-04T15:15:00+05:30\",58723.45,58777.0,58657.6,58759.65,0,0],[\"2026-03-04T"
+    },
+    {
+      "endpoint": "intraday",
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "60minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-04T15:15:00+05:30\",58723.45,58777.0,58657.6,58759.65,0,0],[\"2026-03-04T"
+    },
+    {
+      "endpoint": "intraday",
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "1day",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-04T00:00:00+05:30\",58447.15,59058.4,58393.55,58755.25,0,0]]}}"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "1minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T15:29:00+05:30\",59867.1,59881.3,59838.7,59856.05,0,0],[\"2026-03-02T1"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "5minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T15:25:00+05:30\",59903.55,59943.4,59838.7,59856.05,0,0],[\"2026-03-02T"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "15minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T15:15:00+05:30\",59907.05,59956.7,59838.7,59856.05,0,0],[\"2026-03-02T"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "30minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T15:15:00+05:30\",59907.05,59956.7,59838.7,59856.05,0,0],[\"2026-03-02T"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "60minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T15:15:00+05:30\",59907.05,59956.7,59838.7,59856.05,0,0],[\"2026-03-02T"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "1day",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T00:00:00+05:30\",59204.3,60177.5,59148.0,59839.65,0,0],[\"2026-02-27T0"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "1week",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T00:00:00+05:30\",59204.3,60177.5,59148.0,59839.65,0,0],[\"2026-02-23T0"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "1month",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-01T00:00:00+05:30\",59204.3,60177.5,59148.0,59839.65,0,0],[\"2026-02-01T0"
+    },
+    {
+      "endpoint": "intraday",
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "1minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-04T15:29:00+05:30\",79144.76,79147.85,79073.0,79120.74,0,0],[\"2026-03-04"
+    },
+    {
+      "endpoint": "intraday",
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "5minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-04T15:25:00+05:30\",79093.79,79150.58,79049.79,79120.74,0,0],[\"2026-03-0"
+    },
+    {
+      "endpoint": "intraday",
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "15minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-04T15:15:00+05:30\",79077.16,79150.58,79023.12,79120.74,0,0],[\"2026-03-0"
+    },
+    {
+      "endpoint": "intraday",
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "30minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-04T15:15:00+05:30\",79077.16,79150.58,79023.12,79120.74,0,0],[\"2026-03-0"
+    },
+    {
+      "endpoint": "intraday",
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "60minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-04T15:15:00+05:30\",79077.16,79150.58,79023.12,79120.74,0,0],[\"2026-03-0"
+    },
+    {
+      "endpoint": "intraday",
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "1day",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-04T00:00:00+05:30\",78528.82,79527.41,78443.2,79116.19,0,0]]}}"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "1minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T15:29:00+05:30\",80184.15,80205.56,80141.24,80195.59,0,0],[\"2026-03-0"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "5minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T15:25:00+05:30\",80222.54,80295.59,80141.24,80195.59,0,0],[\"2026-03-0"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "15minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T15:15:00+05:30\",80345.64,80371.46,80141.24,80195.59,0,0],[\"2026-03-0"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "30minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T15:15:00+05:30\",80345.64,80371.46,80141.24,80195.59,0,0],[\"2026-03-0"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "60minute",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T15:15:00+05:30\",80345.64,80371.46,80141.24,80195.59,0,0],[\"2026-03-0"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "1day",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T00:00:00+05:30\",78543.73,80632.55,78543.73,80238.85,0,0],[\"2026-02-2"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "1week",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-02T00:00:00+05:30\",78543.73,80632.55,78543.73,80238.85,0,0],[\"2026-02-2"
+    },
+    {
+      "endpoint": "historical",
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "1month",
+      "status": 200,
+      "ok": true,
+      "sample": "{\"status\":\"success\",\"data\":{\"candles\":[[\"2026-03-01T00:00:00+05:30\",78543.73,80632.55,78543.73,80238.85,0,0],[\"2026-02-0"
+    }
+  ]
+}

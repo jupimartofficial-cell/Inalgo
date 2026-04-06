@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-03-30T04:43:24.728Z",
+  "tenantId": "local-desktop",
+  "username": "admin",
+  "checks": [
+    {
+      "step": "login",
+      "ok": true
+    },
+    {
+      "step": "start_live",
+      "ok": true,
+      "executionId": 91,
+      "initialStatus": "WAITING_ENTRY",
+      "strategyId": 11,
+      "strategyName": "Simple Breakdown"
+    },
+    {
+      "step": "runtime_poll",
+      "ok": true,
+      "executionId": 91,
+      "runtimeId": 50,
+      "status": "WAITING_ENTRY",
+      "runtimeStatus": "WAITING",
+      "brokerOrderIds": [],
+      "orderPlacedCount": 0,
+      "orderFailedCount": 0
+    },
+    {
+      "step": "cleanup_exit_runtime",
+      "ok": true,
+      "runtimeId": 50
+    }
+  ],
+  "decision": "NO_GO",
+  "reason": "Execution remained WAITING_ENTRY during validation window; no broker entry/exit evidence yet."
+}

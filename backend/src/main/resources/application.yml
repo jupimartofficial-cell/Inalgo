@@ -1,0 +1,130 @@
+server:
+  port: 8081
+
+spring:
+  config:
+    import: optional:classpath:upstox.properties
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/trade?reWriteBatchedInserts=true&ApplicationName=trade-backend}
+    username: ${DB_USERNAME:trade}
+    password: ${DB_PASSWORD:trade}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: ${DB_MAX_POOL_SIZE:24}
+      minimum-idle: ${DB_MIN_IDLE:4}
+      connection-timeout: ${DB_CONNECTION_TIMEOUT_MS:30000}
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        stringtype: unspecified
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          batch_size: 100
+        order_inserts: true
+        order_updates: true
+  flyway:
+    enabled: true
+    clean-disabled: true
+    locations: classpath:db/migration
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+
+logging:
+  level:
+    root: INFO
+    com.inalgo.trade: INFO
+
+upstox:
+  base-url: ${UPSTOX_BASE_URL:https://api.upstox.com}
+  order-base-url: ${UPSTOX_ORDER_BASE_URL:https://api-hft.upstox.com}
+
+  migration:
+    enabled: ${UPSTOX_MIGRATION_ENABLED:true}
+    cron: ${UPSTOX_MIGRATION_CRON:0 */5 * * * *}
+    intraday-window-days: ${UPSTOX_MIGRATION_INTRADAY_WINDOW_DAYS:5}
+    intraday-min-window-days: ${UPSTOX_MIGRATION_INTRADAY_MIN_WINDOW_DAYS:2}
+    long-window-days: ${UPSTOX_MIGRATION_LONG_WINDOW_DAYS:30}
+    streams:
+      # Spot indices only — futures are managed dynamically by FuturesContractRollService
+      # and run as admin migration jobs, not background streams.
+      - tenant-id: local-desktop
+        instrument-key: NSE_INDEX|Nifty 50
+        interval: 1day
+        bootstrap-from-date: 2024-01-01
+      - tenant-id: local-desktop
+        instrument-key: NSE_INDEX|Nifty Bank
+        interval: 1day
+        bootstrap-from-date: 2024-01-01
+      - tenant-id: local-desktop
+        instrument-key: BSE_INDEX|SENSEX
+        interval: 1day
+        bootstrap-from-date: 2024-01-01
+
+  option-chain:
+    enabled: ${UPSTOX_OPTION_CHAIN_ENABLED:true}
+    tenant-id: ${UPSTOX_OPTION_CHAIN_TENANT_ID:local-desktop}
+    refresh-seconds: ${UPSTOX_OPTION_CHAIN_REFRESH_SECONDS:30}
+    max-expiries-per-underlying: ${UPSTOX_OPTION_CHAIN_MAX_EXPIRIES:2}
+    underlyings:
+      - NSE_INDEX|Nifty 50
+      - NSE_INDEX|Nifty Bank
+      - BSE_INDEX|SENSEX
+
+market:
+  hours:
+    zone-id: ${MARKET_HOURS_ZONE_ID:Asia/Kolkata}
+    open-time: ${MARKET_HOURS_OPEN_TIME:09:15}
+    close-time: ${MARKET_HOURS_CLOSE_TIME:16:00}
+    holidays: []
+  sentiment:
+    enabled: ${MARKET_SENTIMENT_ENABLED:true}
+    tenant-id: ${MARKET_SENTIMENT_TENANT_ID:local-desktop}
+    cron: ${MARKET_SENTIMENT_CRON:0 */5 * * * *}
+    request-timeout-seconds: ${MARKET_SENTIMENT_TIMEOUT_SECONDS:20}
+    news-lookback-hours: ${MARKET_SENTIMENT_NEWS_LOOKBACK_HOURS:48}
+    max-feed-items-per-source: ${MARKET_SENTIMENT_MAX_ITEMS_PER_SOURCE:8}
+
+openai:
+  enabled: ${OPENAI_MARKET_ENABLED:true}
+  base-url: ${OPENAI_BASE_URL:https://api.openai.com}
+  market-analysis-model: ${OPENAI_MARKET_ANALYSIS_MODEL:gpt-4o-mini}
+  request-timeout-seconds: ${OPENAI_MARKET_TIMEOUT_SECONDS:45}
+  reasoning-effort: ${OPENAI_MARKET_REASONING_EFFORT:low}
+  max-evidence-items: ${OPENAI_MARKET_MAX_EVIDENCE_ITEMS:6}
+  web-search-model: ${OPENAI_WEB_SEARCH_MODEL:gpt-4o-mini}
+  web-search-timeout-seconds: ${OPENAI_WEB_SEARCH_TIMEOUT_SECONDS:30}
+
+admin:
+  session-minutes: ${ADMIN_SESSION_MINUTES:360}
+  triggers:
+    poll-ms: ${ADMIN_TRIGGER_POLL_MS:15000}
+
+app:
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173,http://127.0.0.1:5173,http://localhost:5174,http://127.0.0.1:5174}
+
+  security:
+    rate-limit:
+      api-requests-per-second: ${API_RATE_LIMIT_PER_SECOND:50}
+      admin-login-per-minute: ${ADMIN_LOGIN_RATE_LIMIT_PER_MINUTE:5}
+      admin-login-per-hour: ${ADMIN_LOGIN_RATE_LIMIT_PER_HOUR:25}
+
+trading:
+  scripts:
+    enabled: ${TRADING_SCRIPTS_ENABLED:true}
+    worker-command: ${TRADING_SCRIPTS_WORKER_COMMAND:node}
+    worker-script-path: ${TRADING_SCRIPTS_WORKER_PATH:../scripts/trading-script-worker.mjs}
+    worker-timeout-ms: ${TRADING_SCRIPTS_WORKER_TIMEOUT_MS:8000}
+    worker-memory-mb: ${TRADING_SCRIPTS_WORKER_MEMORY_MB:96}
+    max-source-length: ${TRADING_SCRIPTS_MAX_SOURCE_LENGTH:50000}

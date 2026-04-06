@@ -1,0 +1,198 @@
+{
+  "timestamp": "2026-03-07T09:48:14.679496+00:00",
+  "minProbeDate": "2020-01-01",
+  "rows": [
+    {
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "1minute",
+      "unit": "minutes",
+      "interval": 1,
+      "windowDays": 29,
+      "earliestCandleAt": "2025-03-13T09:15:00+05:30"
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "5minute",
+      "unit": "minutes",
+      "interval": 5,
+      "windowDays": 29,
+      "earliestCandleAt": "2025-03-13T09:15:00+05:30"
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "15minute",
+      "unit": "minutes",
+      "interval": 15,
+      "windowDays": 29,
+      "earliestCandleAt": "2025-03-13T09:15:00+05:30"
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "30minute",
+      "unit": "minutes",
+      "interval": 30,
+      "windowDays": 29,
+      "earliestCandleAt": "2022-01-03T09:15:00+05:30"
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "60minute",
+      "unit": "minutes",
+      "interval": 60,
+      "windowDays": 29,
+      "earliestCandleAt": "2022-01-03T09:15:00+05:30"
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "1day",
+      "unit": "days",
+      "interval": 1,
+      "windowDays": 365,
+      "earliestCandleAt": "2020-01-01T00:00:00+05:30"
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "1week",
+      "unit": "weeks",
+      "interval": 1,
+      "windowDays": 1825,
+      "earliestCandleAt": "2019-12-30T00:00:00+05:30"
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "1month",
+      "unit": "months",
+      "interval": 1,
+      "windowDays": 3650,
+      "earliestCandleAt": "2020-01-01T00:00:00+05:30"
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "1minute",
+      "unit": "minutes",
+      "interval": 1,
+      "windowDays": 29,
+      "earliestCandleAt": "2025-03-13T09:15:00+05:30"
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "5minute",
+      "unit": "minutes",
+      "interval": 5,
+      "windowDays": 29,
+      "earliestCandleAt": "2025-03-13T09:15:00+05:30"
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "15minute",
+      "unit": "minutes",
+      "interval": 15,
+      "windowDays": 29,
+      "earliestCandleAt": "2025-03-13T09:15:00+05:30"
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "30minute",
+      "unit": "minutes",
+      "interval": 30,
+      "windowDays": 29,
+      "earliestCandleAt": "2022-01-03T09:15:00+05:30"
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "60minute",
+      "unit": "minutes",
+      "interval": 60,
+      "windowDays": 29,
+      "earliestCandleAt": "2022-01-03T09:15:00+05:30"
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "1day",
+      "unit": "days",
+      "interval": 1,
+      "windowDays": 365,
+      "earliestCandleAt": "2020-01-01T00:00:00+05:30"
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "1week",
+      "unit": "weeks",
+      "interval": 1,
+      "windowDays": 1825,
+      "earliestCandleAt": "2019-12-30T00:00:00+05:30"
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "1month",
+      "unit": "months",
+      "interval": 1,
+      "windowDays": 3650,
+      "earliestCandleAt": "2020-01-01T00:00:00+05:30"
+    },
+    {
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "1minute",
+      "unit": "minutes",
+      "interval": 1,
+      "windowDays": 29,
+      "earliestCandleAt": "2025-03-13T09:15:00+05:30"
+    },
+    {
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "5minute",
+      "unit": "minutes",
+      "interval": 5,
+      "windowDays": 29,
+      "earliestCandleAt": "2025-03-13T09:15:00+05:30"
+    },
+    {
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "15minute",
+      "unit": "minutes",
+      "interval": 15,
+      "windowDays": 29,
+      "earliestCandleAt": "2025-03-13T09:15:00+05:30"
+    },
+    {
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "30minute",
+      "unit": "minutes",
+      "interval": 30,
+      "windowDays": 29,
+      "earliestCandleAt": "2022-01-03T09:15:00+05:30"
+    },
+    {
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "60minute",
+      "unit": "minutes",
+      "interval": 60,
+      "windowDays": 29,
+      "earliestCandleAt": "2022-01-03T09:15:00+05:30"
+    },
+    {
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "1day",
+      "unit": "days",
+      "interval": 1,
+      "windowDays": 365,
+      "earliestCandleAt": "2020-01-01T00:00:00+05:30"
+    },
+    {
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "1week",
+      "unit": "weeks",
+      "interval": 1,
+      "windowDays": 1825,
+      "earliestCandleAt": "2019-12-30T00:00:00+05:30"
+    },
+    {
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "1month",
+      "unit": "months",
+      "interval": 1,
+      "windowDays": 3650,
+      "earliestCandleAt": "2020-01-01T00:00:00+05:30"
+    }
+  ]
+}

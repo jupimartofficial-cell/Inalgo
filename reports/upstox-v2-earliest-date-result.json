@@ -1,0 +1,157 @@
+{
+  "timestampUtc": "2026-03-07T09:55:35.132841+00:00",
+  "endpoint": "/v2/historical-candle",
+  "minProbeDate": "2020-01-01",
+  "rows": [
+    {
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "1minute",
+      "earliestCandleAt": "2025-03-13T09:15:00+05:30",
+      "totalCandlesFetched": 90817,
+      "finalStatus": 400,
+      "errorCode": "UDAPI1148",
+      "errorMessage": "Invalid date range",
+      "windowDays": 29
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "30minute",
+      "earliestCandleAt": "2022-01-03T09:15:00+05:30",
+      "totalCandlesFetched": 13426,
+      "finalStatus": 200,
+      "errorCode": null,
+      "errorMessage": null,
+      "windowDays": 29
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "day",
+      "earliestCandleAt": "2020-01-01T00:00:00+05:30",
+      "totalCandlesFetched": 1537,
+      "finalStatus": 200,
+      "errorCode": null,
+      "errorMessage": null,
+      "windowDays": 365
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "week",
+      "earliestCandleAt": "2019-12-30T00:00:00+05:30",
+      "totalCandlesFetched": 323,
+      "finalStatus": 200,
+      "errorCode": null,
+      "errorMessage": null,
+      "windowDays": 1825
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty 50",
+      "timeframe": "month",
+      "earliestCandleAt": "2020-01-01T00:00:00+05:30",
+      "totalCandlesFetched": 75,
+      "finalStatus": 200,
+      "errorCode": null,
+      "errorMessage": null,
+      "windowDays": 3650
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "1minute",
+      "earliestCandleAt": "2025-03-13T09:15:00+05:30",
+      "totalCandlesFetched": 90813,
+      "finalStatus": 400,
+      "errorCode": "UDAPI1148",
+      "errorMessage": "Invalid date range",
+      "windowDays": 29
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "30minute",
+      "earliestCandleAt": "2022-01-03T09:15:00+05:30",
+      "totalCandlesFetched": 13423,
+      "finalStatus": 200,
+      "errorCode": null,
+      "errorMessage": null,
+      "windowDays": 29
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "day",
+      "earliestCandleAt": "2020-01-01T00:00:00+05:30",
+      "totalCandlesFetched": 1537,
+      "finalStatus": 200,
+      "errorCode": null,
+      "errorMessage": null,
+      "windowDays": 365
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "week",
+      "earliestCandleAt": "2019-12-30T00:00:00+05:30",
+      "totalCandlesFetched": 323,
+      "finalStatus": 200,
+      "errorCode": null,
+      "errorMessage": null,
+      "windowDays": 1825
+    },
+    {
+      "instrument": "NSE_INDEX|Nifty Bank",
+      "timeframe": "month",
+      "earliestCandleAt": "2020-01-01T00:00:00+05:30",
+      "totalCandlesFetched": 75,
+      "finalStatus": 200,
+      "errorCode": null,
+      "errorMessage": null,
+      "windowDays": 3650
+    },
+    {
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "1minute",
+      "earliestCandleAt": "2025-03-13T09:15:00+05:30",
+      "totalCandlesFetched": 90814,
+      "finalStatus": 400,
+      "errorCode": "UDAPI1148",
+      "errorMessage": "Invalid date range",
+      "windowDays": 29
+    },
+    {
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "30minute",
+      "earliestCandleAt": "2022-01-03T09:15:00+05:30",
+      "totalCandlesFetched": 13426,
+      "finalStatus": 200,
+      "errorCode": null,
+      "errorMessage": null,
+      "windowDays": 29
+    },
+    {
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "day",
+      "earliestCandleAt": "2020-01-01T00:00:00+05:30",
+      "totalCandlesFetched": 1537,
+      "finalStatus": 200,
+      "errorCode": null,
+      "errorMessage": null,
+      "windowDays": 365
+    },
+    {
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "week",
+      "earliestCandleAt": "2019-12-30T00:00:00+05:30",
+      "totalCandlesFetched": 323,
+      "finalStatus": 200,
+      "errorCode": null,
+      "errorMessage": null,
+      "windowDays": 1825
+    },
+    {
+      "instrument": "BSE_INDEX|SENSEX",
+      "timeframe": "month",
+      "earliestCandleAt": "2020-01-01T00:00:00+05:30",
+      "totalCandlesFetched": 75,
+      "finalStatus": 200,
+      "errorCode": null,
+      "errorMessage": null,
+      "windowDays": 3650
+    }
+  ]
+}

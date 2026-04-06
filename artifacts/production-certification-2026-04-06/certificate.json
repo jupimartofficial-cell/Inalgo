@@ -1,0 +1,159 @@
+{
+  "generatedAt": "2026-04-06T05:23:15.595Z",
+  "baseUrl": "http://localhost:5173",
+  "backendUrl": "http://localhost:8081",
+  "method": "Headless Chromium hands-on route rendering against running local backend/frontend without Playwright route mocks.",
+  "routes": [
+    {
+      "route": "Dashboard",
+      "path": "/",
+      "status": "PASS",
+      "message": "Rendered expected product text",
+      "newConsoleErrors": [],
+      "newFailedResponses": [],
+      "newPageErrors": []
+    },
+    {
+      "route": "Migration Jobs",
+      "path": "/migration",
+      "status": "PASS",
+      "message": "Rendered expected product text",
+      "newConsoleErrors": [],
+      "newFailedResponses": [],
+      "newPageErrors": []
+    },
+    {
+      "route": "Manage Triggers",
+      "path": "/triggers",
+      "status": "PASS",
+      "message": "Rendered expected product text",
+      "newConsoleErrors": [],
+      "newFailedResponses": [],
+      "newPageErrors": []
+    },
+    {
+      "route": "Historical Data",
+      "path": "/history",
+      "status": "PASS",
+      "message": "Rendered expected product text",
+      "newConsoleErrors": [],
+      "newFailedResponses": [],
+      "newPageErrors": []
+    },
+    {
+      "route": "Option Chain",
+      "path": "/option-chain",
+      "status": "PASS",
+      "message": "Rendered expected product text",
+      "newConsoleErrors": [],
+      "newFailedResponses": [],
+      "newPageErrors": []
+    },
+    {
+      "route": "Trading Window",
+      "path": "/trading-window",
+      "status": "PASS",
+      "message": "Rendered expected product text",
+      "newConsoleErrors": [],
+      "newFailedResponses": [],
+      "newPageErrors": []
+    },
+    {
+      "route": "Trading Scripts",
+      "path": "/trading-scripts",
+      "status": "PASS",
+      "message": "Rendered expected product text",
+      "newConsoleErrors": [],
+      "newFailedResponses": [],
+      "newPageErrors": []
+    },
+    {
+      "route": "Backtest P&L",
+      "path": "/backtest/pnl",
+      "status": "PASS",
+      "message": "Rendered expected product text",
+      "newConsoleErrors": [],
+      "newFailedResponses": [],
+      "newPageErrors": []
+    },
+    {
+      "route": "Intra Strategies",
+      "path": "/intra/strategies",
+      "status": "PASS",
+      "message": "Rendered expected product text",
+      "newConsoleErrors": [],
+      "newFailedResponses": [],
+      "newPageErrors": []
+    },
+    {
+      "route": "Intra Monitor",
+      "path": "/intra/monitor",
+      "status": "PASS",
+      "message": "Rendered expected product text",
+      "newConsoleErrors": [],
+      "newFailedResponses": [],
+      "newPageErrors": []
+    },
+    {
+      "route": "Intra P&L",
+      "path": "/intra/pnl",
+      "status": "PASS",
+      "message": "Rendered expected product text",
+      "newConsoleErrors": [],
+      "newFailedResponses": [],
+      "newPageErrors": []
+    },
+    {
+      "route": "Market Watch",
+      "path": "/market-signals/market-watch",
+      "status": "PASS",
+      "message": "Rendered expected product text",
+      "newConsoleErrors": [],
+      "newFailedResponses": [],
+      "newPageErrors": []
+    },
+    {
+      "route": "Trading Signal",
+      "path": "/market-signals/trading-signal",
+      "status": "PASS",
+      "message": "Rendered expected product text",
+      "newConsoleErrors": [],
+      "newFailedResponses": [],
+      "newPageErrors": []
+    },
+    {
+      "route": "Trading Param",
+      "path": "/market-signals/trading-param",
+      "status": "PASS",
+      "message": "Rendered expected product text",
+      "newConsoleErrors": [],
+      "newFailedResponses": [],
+      "newPageErrors": []
+    },
+    {
+      "route": "Market Trend",
+      "path": "/market-signals/market-trend",
+      "status": "PASS",
+      "message": "Rendered expected product text",
+      "newConsoleErrors": [],
+      "newFailedResponses": [],
+      "newPageErrors": []
+    },
+    {
+      "route": "Trading Desk",
+      "path": "/trading-desk/advanced",
+      "status": "PASS",
+      "message": "Rendered expected product text",
+      "newConsoleErrors": [],
+      "newFailedResponses": [],
+      "newPageErrors": []
+    }
+  ],
+  "summary": {
+    "pass": 16,
+    "fail": 0,
+    "consoleErrors": 0,
+    "failedApiResponses": 0,
+    "pageErrors": 0
+  }
+}

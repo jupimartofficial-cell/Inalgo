@@ -1,0 +1,358 @@
+{
+  "generatedAt": "2026-03-28T08:37:40.793Z",
+  "tenantId": "local-desktop",
+  "username": "admin",
+  "instrumentKey": "NSE_INDEX|Nifty Bank",
+  "timeframe": {
+    "unit": "minutes",
+    "interval": 5
+  },
+  "window": {
+    "requestedTradingDays": 30,
+    "resolvedTradingDays": 30,
+    "fromDate": "2025-11-28",
+    "toDate": "2026-03-28"
+  },
+  "attachmentNormalization": {
+    "optionLots": 1,
+    "exitTime": "15:20"
+  },
+  "sampledParityExecutions": [
+    {
+      "date": "2026-03-16",
+      "decision": "ENTER_CALL",
+      "expectedOptionType": "CALL",
+      "actualOptionType": "CALL",
+      "compileStatus": "SUCCESS",
+      "diagnostics": [],
+      "pass": true
+    },
+    {
+      "date": "2026-03-17",
+      "decision": "ENTER_CALL",
+      "expectedOptionType": "CALL",
+      "actualOptionType": "CALL",
+      "compileStatus": "SUCCESS",
+      "diagnostics": [],
+      "pass": true
+    },
+    {
+      "date": "2026-03-20",
+      "decision": "ENTER_PUT",
+      "expectedOptionType": "PUT",
+      "actualOptionType": "PUT",
+      "compileStatus": "SUCCESS",
+      "diagnostics": [],
+      "pass": true
+    },
+    {
+      "date": "2026-03-23",
+      "decision": "ENTER_PUT",
+      "expectedOptionType": "PUT",
+      "actualOptionType": "PUT",
+      "compileStatus": "SUCCESS",
+      "diagnostics": [],
+      "pass": true
+    },
+    {
+      "date": "2026-03-24",
+      "decision": "ENTER_CALL",
+      "expectedOptionType": "CALL",
+      "actualOptionType": "CALL",
+      "compileStatus": "SUCCESS",
+      "diagnostics": [],
+      "pass": true
+    },
+    {
+      "date": "2026-03-27",
+      "decision": "ENTER_PUT",
+      "expectedOptionType": "PUT",
+      "actualOptionType": "PUT",
+      "compileStatus": "SUCCESS",
+      "diagnostics": [],
+      "pass": true
+    }
+  ],
+  "dailyBaseline": [
+    {
+      "date": "2026-02-12",
+      "dayType": "NORMAL",
+      "decision": "HOLD",
+      "triggerFamily": "NONE",
+      "reason": "Normal day conditions not met."
+    },
+    {
+      "date": "2026-02-13",
+      "dayType": "GAP_DOWN",
+      "decision": "ENTER_PUT",
+      "triggerFamily": "GAP_DOWN_BREAKDOWN",
+      "reason": "Gap Down day with 5m close below ORB_LOW and SELL trend."
+    },
+    {
+      "date": "2026-02-16",
+      "dayType": "GAP_DOWN",
+      "decision": "HOLD",
+      "triggerFamily": "NONE",
+      "reason": "Gap Down conditions not met."
+    },
+    {
+      "date": "2026-02-17",
+      "dayType": "NORMAL",
+      "decision": "ENTER_CALL",
+      "triggerFamily": "NORMAL_BREAKOUT",
+      "reason": "Normal day breakout above ORB_HIGH with BUY trend."
+    },
+    {
+      "date": "2026-02-18",
+      "dayType": "GAP_UP",
+      "decision": "ENTER_CALL",
+      "triggerFamily": "GAP_UP_BREAKOUT",
+      "reason": "Gap Up day with 5m close above ORB_HIGH and BUY trend."
+    },
+    {
+      "date": "2026-02-19",
+      "dayType": "GAP_UP",
+      "decision": "HOLD",
+      "triggerFamily": "NONE",
+      "reason": "Gap Up conditions not met."
+    },
+    {
+      "date": "2026-02-20",
+      "dayType": "NORMAL",
+      "decision": "HOLD",
+      "triggerFamily": "NONE",
+      "reason": "Normal day conditions not met."
+    },
+    {
+      "date": "2026-02-23",
+      "dayType": "NORMAL",
+      "decision": "HOLD",
+      "triggerFamily": "NONE",
+      "reason": "Normal day conditions not met."
+    },
+    {
+      "date": "2026-02-24",
+      "dayType": "NORMAL",
+      "decision": "HOLD",
+      "triggerFamily": "NONE",
+      "reason": "Normal day conditions not met."
+    },
+    {
+      "date": "2026-02-25",
+      "dayType": "NORMAL",
+      "decision": "HOLD",
+      "triggerFamily": "NONE",
+      "reason": "Normal day conditions not met."
+    },
+    {
+      "date": "2026-02-26",
+      "dayType": "NORMAL",
+      "decision": "HOLD",
+      "triggerFamily": "NONE",
+      "reason": "Normal day conditions not met."
+    },
+    {
+      "date": "2026-02-27",
+      "dayType": "NORMAL",
+      "decision": "ENTER_PUT",
+      "triggerFamily": "NORMAL_BREAKDOWN",
+      "reason": "Normal day breakdown below ORB_LOW with SELL trend."
+    },
+    {
+      "date": "2026-03-02",
+      "dayType": "GAP_DOWN",
+      "decision": "HOLD",
+      "triggerFamily": "NONE",
+      "reason": "Gap Down conditions not met."
+    },
+    {
+      "date": "2026-03-04",
+      "dayType": "GAP_DOWN",
+      "decision": "HOLD",
+      "triggerFamily": "NONE",
+      "reason": "Gap Down conditions not met."
+    },
+    {
+      "date": "2026-03-05",
+      "dayType": "NORMAL",
+      "decision": "HOLD",
+      "triggerFamily": "NONE",
+      "reason": "Normal day conditions not met."
+    },
+    {
+      "date": "2026-03-06",
+      "dayType": "NORMAL",
+      "decision": "ENTER_PUT",
+      "triggerFamily": "NORMAL_BREAKDOWN",
+      "reason": "Normal day breakdown below ORB_LOW with SELL trend."
+    },
+    {
+      "date": "2026-03-09",
+      "dayType": "GAP_DOWN",
+      "decision": "HOLD",
+      "triggerFamily": "NONE",
+      "reason": "Gap Down conditions not met."
+    },
+    {
+      "date": "2026-03-10",
+      "dayType": "GAP_UP",
+      "decision": "ENTER_CALL",
+      "triggerFamily": "GAP_UP_BREAKOUT",
+      "reason": "Gap Up day with 5m close above ORB_HIGH and BUY trend."
+    },
+    {
+      "date": "2026-03-11",
+      "dayType": "NORMAL",
+      "decision": "ENTER_PUT",
+      "triggerFamily": "NORMAL_BREAKDOWN",
+      "reason": "Normal day breakdown below ORB_LOW with SELL trend."
+    },
+    {
+      "date": "2026-03-12",
+      "dayType": "GAP_DOWN",
+      "decision": "HOLD",
+      "triggerFamily": "NONE",
+      "reason": "Gap Down conditions not met."
+    },
+    {
+      "date": "2026-03-13",
+      "dayType": "GAP_DOWN",
+      "decision": "ENTER_PUT",
+      "triggerFamily": "GAP_DOWN_BREAKDOWN",
+      "reason": "Gap Down day with 5m close below ORB_LOW and SELL trend."
+    },
+    {
+      "date": "2026-03-16",
+      "dayType": "NORMAL",
+      "decision": "ENTER_CALL",
+      "triggerFamily": "NORMAL_BREAKOUT",
+      "reason": "Normal day breakout above ORB_HIGH with BUY trend."
+    },
+    {
+      "date": "2026-03-17",
+      "dayType": "NORMAL",
+      "decision": "ENTER_CALL",
+      "triggerFamily": "NORMAL_BREAKOUT",
+      "reason": "Normal day breakout above ORB_HIGH with BUY trend."
+    },
+    {
+      "date": "2026-03-18",
+      "dayType": "NORMAL",
+      "decision": "HOLD",
+      "triggerFamily": "NONE",
+      "reason": "Normal day conditions not met."
+    },
+    {
+      "date": "2026-03-19",
+      "dayType": "GAP_DOWN",
+      "decision": "HOLD",
+      "triggerFamily": "NONE",
+      "reason": "Gap Down conditions not met."
+    },
+    {
+      "date": "2026-03-20",
+      "dayType": "NORMAL",
+      "decision": "ENTER_PUT",
+      "triggerFamily": "NORMAL_BREAKDOWN",
+      "reason": "Normal day breakdown below ORB_LOW with SELL trend."
+    },
+    {
+      "date": "2026-03-23",
+      "dayType": "GAP_DOWN",
+      "decision": "ENTER_PUT",
+      "triggerFamily": "GAP_DOWN_BREAKDOWN",
+      "reason": "Gap Down day with 5m close below ORB_LOW and SELL trend."
+    },
+    {
+      "date": "2026-03-24",
+      "dayType": "NORMAL",
+      "decision": "ENTER_CALL",
+      "triggerFamily": "NORMAL_BREAKOUT",
+      "reason": "Normal day breakout above ORB_HIGH with BUY trend."
+    },
+    {
+      "date": "2026-03-25",
+      "dayType": "GAP_UP",
+      "decision": "HOLD",
+      "triggerFamily": "NONE",
+      "reason": "Gap Up conditions not met."
+    },
+    {
+      "date": "2026-03-27",
+      "dayType": "NORMAL",
+      "decision": "ENTER_PUT",
+      "triggerFamily": "NORMAL_BREAKDOWN",
+      "reason": "Normal day breakdown below ORB_LOW with SELL trend."
+    }
+  ],
+  "liveOrder": {
+    "enabled": false,
+    "confirmLive": false,
+    "hardCap": {
+      "maxOrders": 1,
+      "maxQtyPerOrder": 1
+    },
+    "result": null
+  },
+  "checkpoints": [
+    {
+      "id": "ui_login_and_route",
+      "pass": true,
+      "detail": "Authenticated and opened Trading Scripts route."
+    },
+    {
+      "id": "session_token_available",
+      "pass": true,
+      "detail": "Admin session token resolved from UI login session."
+    },
+    {
+      "id": "backend_login",
+      "pass": true,
+      "detail": "Backend login skipped because UI session token is already available."
+    },
+    {
+      "id": "analytics_window_loaded",
+      "pass": true,
+      "detail": "Loaded 30 joined trading days for NSE_INDEX|Nifty Bank minutes|5."
+    },
+    {
+      "id": "actionable_days_present",
+      "pass": true,
+      "detail": "Found 14 actionable trading days from attachment logic."
+    },
+    {
+      "id": "bootstrap_draft_created",
+      "pass": true,
+      "detail": "Bootstrap draft created with scriptId=1."
+    },
+    {
+      "id": "backtest_metrics_present",
+      "pass": true,
+      "detail": "Backtest summary returned totalPnl, executedTrades, and accuracy metrics."
+    },
+    {
+      "id": "publish_paper_ready",
+      "pass": true,
+      "detail": "Script status after paper publish: PAPER_READY"
+    },
+    {
+      "id": "publish_live_ready",
+      "pass": true,
+      "detail": "Script status after live publish: LIVE_READY"
+    },
+    {
+      "id": "behavioral_parity",
+      "pass": true,
+      "detail": "Parity comparison on 6 executable sample days."
+    },
+    {
+      "id": "live_order_checkpoint",
+      "pass": true,
+      "detail": "Live order step skipped (LIVE_ORDER_E2E!=1)."
+    }
+  ],
+  "passed": true,
+  "artifacts": {
+    "tradingScriptsScreenshot": "trading-scripts-page.png"
+  }
+}

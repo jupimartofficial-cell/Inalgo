@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-03-30T04:41:09.717Z",
+  "tenantId": "local-desktop",
+  "username": "admin",
+  "strategyName": "(first strategy)",
+  "range": {
+    "startDate": "2026-03-20",
+    "endDate": "2026-03-27"
+  },
+  "marketBranch": "CLOSED_MARKET",
+  "checkpoints": [
+    {
+      "id": "login_and_route",
+      "pass": true,
+      "detail": "Authenticated and opened /intra/monitor"
+    },
+    {
+      "id": "market_branch",
+      "pass": true,
+      "detail": "Detected monitor branch: CLOSED_MARKET"
+    },
+    {
+      "id": "strategy_selection",
+      "pass": true,
+      "detail": "Selected first visible strategy"
+    },
+    {
+      "id": "historical_mode_configured",
+      "pass": true,
+      "detail": "Configured historical range 2026-03-20 to 2026-03-27"
+    },
+    {
+      "id": "historical_run_started",
+      "pass": true,
+      "detail": "Historical run API accepted and run persisted"
+    },
+    {
+      "id": "pnl_navigation_and_sections",
+      "pass": true,
+      "detail": "Navigated to Intra P&L and validated core sections"
+    },
+    {
+      "id": "csv_export",
+      "pass": true,
+      "detail": "CSV export endpoint returned HTTP 200"
+    },
+    {
+      "id": "upstox_sync_render",
+      "pass": true,
+      "detail": "Upstox tab rendered outcome: data_present"
+    }
+  ],
+  "passed": true,
+  "notes": [
+    "Closed-market branch validated: persistence and stale/session behavior expected."
+  ],
+  "artifacts": {
+    "monitorScreenshot": "monitor-after-run.png",
+    "pnlScreenshot": "pnl-final.png"
+  }
+}

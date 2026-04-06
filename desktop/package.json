@@ -1,0 +1,52 @@
+{
+  "name": "inalgo-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Electron desktop app for InAlgo",
+  "main": "dist/main/main.js",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:renderer\" \"npm:dev:electron\"",
+    "dev:renderer": "vite",
+    "dev:electron": "wait-on tcp:5173 && electron .",
+    "build": "npm run build:renderer && npm run build:electron",
+    "build:renderer": "vite build",
+    "build:electron": "tsc -p tsconfig.electron.json",
+    "lint": "tsc --noEmit",
+    "test:e2e": "playwright test",
+    "test:e2e:intra-real-data": "REAL_DATA_E2E=1 playwright test e2e/intra-trade-real-data-certification.spec.ts --reporter=line",
+    "test:e2e:trading-scripts-real-data": "REAL_DATA_E2E=1 playwright test e2e/trading-scripts-real-data-certification.spec.ts --reporter=line",
+    "package": "electron-builder"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@monaco-editor/react": "^4.7.0",
+    "@mui/icons-material": "^6.1.6",
+    "@mui/material": "^6.1.6",
+    "lightweight-charts": "^4.2.1",
+    "monaco-editor": "^0.55.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^22.8.7",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "concurrently": "^9.0.1",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "wait-on": "^8.0.1"
+  },
+  "build": {
+    "appId": "com.inalgo.desktop",
+    "files": [
+      "dist/**/*",
+      "package.json"
+    ]
+  }
+}

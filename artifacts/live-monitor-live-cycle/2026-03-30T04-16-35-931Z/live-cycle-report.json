@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-03-30T04:16:35.934Z",
+  "tenantId": "local-desktop",
+  "username": "admin",
+  "steps": [
+    {
+      "step": "login",
+      "ok": true
+    },
+    {
+      "step": "before_orders",
+      "ok": true,
+      "count": 1
+    },
+    {
+      "step": "load_live_ready_library",
+      "ok": true,
+      "strategies": [
+        {
+          "id": 11,
+          "strategyName": "Simple Breakdown"
+        },
+        {
+          "id": 12,
+          "strategyName": "Simple Breakout"
+        },
+        {
+          "id": 9,
+          "strategyName": "OHL First candle Breakout"
+        },
+        {
+          "id": 10,
+          "strategyName": "OHL First candle BreakDown"
+        }
+      ]
+    },
+    {
+      "step": "poll_for_entered",
+      "ok": false,
+      "createdExecutions": [
+        {
+          "strategyId": 11,
+          "strategyName": "Simple Breakdown",
+          "executionId": 86,
+          "initialStatus": "WAITING_ENTRY",
+          "latestStatus": "WAITING_ENTRY"
+        },
+        {
+          "strategyId": 12,
+          "strategyName": "Simple Breakout",
+          "executionId": 87,
+          "initialStatus": "WAITING_ENTRY",
+          "latestStatus": "WAITING_ENTRY"
+        },
+        {
+          "strategyId": 9,
+          "strategyName": "OHL First candle Breakout",
+          "executionId": 88,
+          "initialStatus": "WAITING_ENTRY",
+          "latestStatus": "WAITING_ENTRY"
+        },
+        {
+          "strategyId": 10,
+          "strategyName": "OHL First candle BreakDown",
+          "executionId": 89,
+          "initialStatus": "WAITING_ENTRY",
+          "latestStatus": "WAITING_ENTRY"
+        }
+      ]
+    },
+    {
+      "step": "after_orders_no_entry",
+      "ok": true,
+      "count": 1
+    }
+  ],
+  "attempts": [
+    {
+      "strategyId": 11,
+      "strategyName": "Simple Breakdown",
+      "started": true,
+      "executionId": 86,
+      "initialStatus": "WAITING_ENTRY"
+    },
+    {
+      "strategyId": 12,
+      "strategyName": "Simple Breakout",
+      "started": true,
+      "executionId": 87,
+      "initialStatus": "WAITING_ENTRY"
+    },
+    {
+      "strategyId": 9,
+      "strategyName": "OHL First candle Breakout",
+      "started": true,
+      "executionId": 88,
+      "initialStatus": "WAITING_ENTRY"
+    },
+    {
+      "strategyId": 10,
+      "strategyName": "OHL First candle BreakDown",
+      "started": true,
+      "executionId": 89,
+      "initialStatus": "WAITING_ENTRY"
+    }
+  ],
+  "decision": "BLOCKED",
+  "reason": "No LIVE execution reached ENTERED/PAUSED/PARTIAL_EXIT during polling window"
+}
