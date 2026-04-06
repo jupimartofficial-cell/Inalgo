@@ -1,0 +1,64 @@
+{
+  "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+  "version": "v1.1.0",
+  "entity": {
+    "type": "group",
+    "role": "maintainer",
+    "name": "InAlgo project maintainers",
+    "email": "jupimartofficial@gmail.com",
+    "description": "Maintainers of InAlgo, an MIT-licensed open-source intraday trading workstation for Indian equity and F&O markets. Funding supports project maintenance, documentation, CI and test infrastructure, sanitized demos, and ongoing open-source development. InAlgo is not financial advice and funding does not purchase trading recommendations, live signal access, or investment services.",
+    "webpageUrl": {
+      "url": "https://github.com/jupimartofficial-cell"
+    }
+  },
+  "projects": [
+    {
+      "guid": "inalgo",
+      "name": "InAlgo",
+      "description": "InAlgo is an open-source, local-first trading workstation for Indian equity and F&O markets, with strategy development, intraday backtesting, paper/live execution monitoring, market-watch signals, option-chain analysis, historical OHLCV data, trigger operations, and P&L review.",
+      "webpageUrl": {
+        "url": "https://github.com/jupimartofficial-cell/Inalgo"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/jupimartofficial-cell/Inalgo.git"
+      },
+      "licenses": [
+        "spdx:MIT"
+      ],
+      "tags": [
+        "trading",
+        "fintech",
+        "spring-boot",
+        "react",
+        "postgresql",
+        "backtesting",
+        "indian-markets",
+        "open-source"
+      ]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "maintainer-email",
+        "type": "other",
+        "address": "mailto:jupimartofficial@gmail.com",
+        "description": "Contact the InAlgo project maintainers for approved sponsorship or support payment details before sending funds."
+      }
+    ],
+    "plans": [
+      {
+        "guid": "general-support",
+        "status": "active",
+        "name": "General project support",
+        "description": "Supports open-source maintenance, documentation, CI and test infrastructure, sanitized demo assets, and contributor onboarding. This does not provide financial advice, trading signals, or live trading services.",
+        "amount": 10000,
+        "currency": "INR",
+        "frequency": "one-time",
+        "channels": [
+          "maintainer-email"
+        ]
+      }
+    ]
+  }
+}
